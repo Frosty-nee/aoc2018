@@ -21,5 +21,8 @@ def first_repeated(deltas):
                 loop=False
                 break
         count+=1
-        print(count)
+
+if __name__ == '__main__':
+    print("this may take some time")
+    print(first_repeated(load_input('day_1_input')))
     
