@@ -61,10 +61,10 @@ def sleepiest_minute(guard):
         for minute in range(60):
             if guards[guard][shift][minute]: 
                 count[minute] += 1
-    return(count.index(max(count)))
+    return(count.index(max(count)), count[minute])
 
 if __name__ == '__main__':
    guards =  parse_input(load_input())
    sleepiest = sleepiest(guards)
-   minute = sleepiest_minute(sleepiest)
+   minute = sleepiest_minute(sleepiest)[0]
    print(sleepiest * minute)
