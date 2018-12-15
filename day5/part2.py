@@ -2,7 +2,6 @@
 import sys
 import string
 import time
-from part1 import react_polymer, switch_case, compare_letters, load_input
 
 def load_input(filepath):
     with open(filepath, 'r') as f:
